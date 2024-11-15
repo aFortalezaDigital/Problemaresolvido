@@ -1,13 +1,21 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    const button = document.querySelector('.quiz-button');
-    const progressBar = document.querySelector('.progress');
+    const questions = document.querySelectorAll('.question');
+    const resultSection = document.getElementById('result');
+    let currentStep = 0;
 
-    let progress = 0;
-
-    button.addEventListener('click', () => {
-        progress += 20;
-        if (progress > 100) progress = 100;
-        progressBar.style.width = progress + '%';
+    questions.forEach((question) => {
+        const buttons = question.querySelectorAll('.quiz-button');
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                question.style.display = 'none';
+                currentStep++;
+                const nextQuestion = document.querySelector(`.question[data-step="${currentStep + 1}"]`);
+                if (nextQuestion) {
+                    nextQuestion.style.display = 'block';
+                } else {
+                    resultSection.style.display = 'block';
+                }
+            });
+        });
     });
 });
