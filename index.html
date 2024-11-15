@@ -1,32 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Site</title>
+    <title>Quiz de Soluções</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <h1>Quiz Title</h1>
+            <h1>Descubra a Solução Ideal para Você</h1>
         </header>
         <main class="content">
-            <section class="question-section">
-                <h2>Selecione suas respostas abaixo:</h2>
-                <button class="quiz-button" data-next="p2">Next</button>
-            </section>
-            <section class="progress-section">
-                <div class="progress-bar">
-                    <div class="progress" style="width: 0%;"></div>
+            <!-- Seção do Quiz -->
+            <section class="quiz-section" id="quiz">
+                <div class="question" data-step="1">
+                    <h2>Qual é o principal desafio que você enfrenta?</h2>
+                    <button class="quiz-button" data-answer="1">Saúde Física</button>
+                    <button class="quiz-button" data-answer="2">Bem-estar Mental</button>
+                    <button class="quiz-button" data-answer="3">Melhorar a Energia</button>
+                </div>
+                <div class="question" data-step="2" style="display: none;">
+                    <h2>Qual é sua maior prioridade no momento?</h2>
+                    <button class="quiz-button" data-answer="1">Resultados Rápidos</button>
+                    <button class="quiz-button" data-answer="2">Mudanças Duradouras</button>
+                </div>
+                <div class="question" data-step="3" style="display: none;">
+                    <h2>Com que frequência você dedica tempo para isso?</h2>
+                    <button class="quiz-button" data-answer="1">Diariamente</button>
+                    <button class="quiz-button" data-answer="2">Semanalmente</button>
+                    <button class="quiz-button" data-answer="3">Raramente</button>
                 </div>
             </section>
-        </main>
-        <footer class="footer">
-            <p>TERMOS DE USO / POLÍTICAS DE PRIVACIDADE</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+
+            <!-- Resultado -->
+            <section class="result-section" id="result" style="display: none;">
+                <h2>Sua Solução Personalizada</h2>
+                <p>Com base nas suas respostas, recomendamos este plano:</p>
+                <bu
