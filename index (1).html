@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Cuidados com a Pele</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Descubra o Melhor Cuidado para Sua Pele</h1>
+        </header>
+        <main class="content">
+            <!-- Seção do Quiz -->
+            <section class="quiz-section" id="quiz">
+                <div class="question" data-step="1">
+                    <h2>Qual o principal problema de pele que você enfrenta?</h2>
+                    <button class="quiz-button" data-answer="pele_caida">Pele Caída</button>
+                    <button class="quiz-button" data-answer="olheiras">Olheiras</button>
+                    <button class="quiz-button" data-answer="manchas">Manchas na Pele</button>
+                    <button class="quiz-button" data-answer="acne">Acne</button>
+                </div>
+                <div class="question" data-step="2" style="display: none;">
+                    <h2>Com que frequência você utiliza produtos para cuidados com a pele?</h2>
+                    <button class="quiz-button" data-answer="diariamente">Diariamente</button>
+                    <button class="quiz-button" data-answer="ocasionalmente">Ocasionalmente</button>
+                    <button class="quiz-button" data-answer="raramente">Raramente</button>
+                    <button class="quiz-button" data-answer="nunca">Nunca</button>
+                </div>
+                <div class="question" data-step="3" style="display: none;">
+                    <h2>Qual a sua faixa etária?</h2>
+                    <button class="quiz-button" data-answer="menos_30">Menos de 30 anos</button>
+                    <button class="quiz-button" data-answer="30_50">Entre 30 e 50 anos</button>
+                    <button class="quiz-button" data-answer="mais_50">Mais de 50 anos</button>
+                </div>
+                <div class="question" data-step="4" style="display: none;">
+                    <h2>Qual é o seu tipo de pele?</h2>
+                    <button class="quiz-button" data-answer="seca">Seca</button>
+                    <button class="quiz-button" data-answer="oleosa">Oleosa</button>
+                    <button class="quiz-button" data-answer="mista">Mista</button>
+                    <button class="quiz-button" data-answer="sensivel">Sensível</button>
+                </div>
+                <div class="question" data-step="5" style="display: none;">
+                    <h2>Quanto tempo você dedica aos cuidados com a pele diariamente?</h2>
+                    <button class="quiz-button" data-answer="menos_10">Menos de 10 minutos</button>
+                    <button class="quiz-button" data-answer="10_30">Entre 10 e 30 minutos</button>
+                    <button class="quiz-button" data-answer="mais_30">Mais de 30 minutos</button>
+                </div>
+                <div class="question" data-step="6" style="display: none;">
+                    <h2>Com que frequência você se expõe ao sol sem proteção?</h2>
+                    <button class="quiz-button" data-answer="diariamente">Diariamente</button>
+                    <button class="quiz-button" data-answer="ocasionalmente">Ocasionalmente</button>
+                    <button class="quiz-button" data-answer="raramente">Raramente</button>
+                    <button class="quiz-button" data-answer="nunca">Nunca</button>
+                </div>
+                <div class="question" data-step="7" style="display: none;">
+                    <h2>Você já consultou um dermatologista?</h2>
+                    <button class="quiz-button" data-answer="sim">Sim</button>
+                    <button class="quiz-button" data-answer="nao">Não</button>
+                </div>
+            </section>
+
+            <!-- Resultado -->
+            <section class="result-section" id="result" style="display: none;">
+                <h2>Identificando seus problemas...</h2>
+                <p>Calculando o melhor plano para você. Aguarde!</p>
+                <div class="loader"></div>
+                <button class="cta-button" style="display: none;" onclick="window.location.href='https://www.exemplo.com/ebook'">
+                    Acesse Seu Plano Agora
+                </button>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>TERMOS DE USO / POLÍTICAS DE PRIVACIDADE</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e1; /* Rosa claro */
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header, .footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #d81b60; /* Rosa escuro */
+    text-align: center;
+}
+
+.quiz-button, .cta-button {
+    display: block;
+    background-color: #ff4081; /* Rosa vibrante */
+    color: white;
+    padding: 10px 20px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    width: 60%;
+}
+
+.quiz-button:hover, .cta-button:hover {
+    background-color: #c2185b; /* Rosa mais escuro */
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #ff4081;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.result-section {
+    text-align: center;
+    background-color: #fce4ec; /* Fundo rosado */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
